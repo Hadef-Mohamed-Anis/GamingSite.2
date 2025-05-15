@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+<title>website Login</title>
+<link rel="stylesheet" href="style-login.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+
+
+
+<div class="background"></div>
+
+
+ <header>
+            <div class="head-left">
+                <img src="img/logo.png" alt="Website Logo" />
+            </div>
+
+            <div class="head-right">
+                <p><a href="index.html">Home</a></p>
+            </div>
+        </header>
+
+
+
+ <div class="container">
+    <div class="content">
+       <h2 class="logo"><i class='bx bxs-hot' ></i>Gaming</h2> 
+       <div class="text-sci">
+        <h2>Welcome! <br><span>To Our Website.</span></h2>
+      </div>
+   </div>
+    <div class="logreg-box">
+      <div class="form-box login">
+         <form action="#">
+            <h2>Sign In</h2>
+                    <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxl-gmail'></i></span>
+                        <input type="email" id="email" required placeholder=" ">
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" id="password" required placeholder=" ">
+                        <label>Password</label>
+                    </div>
+
+                    
+            <div class="remember-forgot">
+               <label><input type="checkbox">Remember me</label>
+               <a href="#">Forgot password</a>
+            </div>
+              <div style="height: 5px;"></div>
+            <button type="submit" class="btn" id="submitSignIn">Sign In</button>
+            <div class="login-register">
+               <p>Don't have an account? <a href="#" class="register-link">Sign up</a></p>
+            </div>
+            <div style="height: 20px;"></div>
+
+            <button id="googleSignIn" class="google-btn">
+               <i class='bx bxl-google'></i>
+            
+             </button>
+             
+         </form>
+         
+      </div>
+
+      <div class="form-box register">
+         <form action="#">
+            <h2>Sign Up</h2>
+            <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+                        <input type="text" id="Name" required placeholder=" ">
+                        <label>Name</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxl-gmail'></i></span>
+                        <input type="email" id="Email" required placeholder=" ">
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" id="Password" required placeholder=" ">
+                        <label>Password</label>
+                    </div>
+            <div class="remember-forgot">
+               <label><input type="checkbox">I agree to the terms & conditions</label>
+
+            </div>
+            <div style="height: 5px;"></div>
+            <button type="submit" class="btn" id="submitSignUp">Sign Up</button>
+            <div class="login-register">
+               <p>Already have an account? <a href="#" class="login-link">Sign In</a></p>
+            </div>
+         </form>
+    </div>
+    
+ </div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
